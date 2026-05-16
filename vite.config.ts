@@ -2,7 +2,13 @@ import { defineConfig } from "vite";
 import dtsPlugin from "vite-plugin-dts";
 
 export default defineConfig({
-  plugins: [dtsPlugin({ insertTypesEntry: true })],
+  plugins: [
+    dtsPlugin({
+      insertTypesEntry: true,
+      entryRoot: "src",
+      outDirs: { dir: "dist" },
+    }),
+  ],
   build: {
     emptyOutDir: true,
     lib: {
@@ -10,6 +16,7 @@ export default defineConfig({
       fileName: "index",
       formats: ["es", "cjs"],
     },
+    copyPublicDir: false,
   },
   resolve: {
     tsconfigPaths: true,

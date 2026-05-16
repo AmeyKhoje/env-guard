@@ -567,11 +567,6 @@ unplugin@^2.3.2:
     picomatch "^4.0.3"
     webpack-virtual-modules "^0.6.2"
 
-vite-dts-plugin@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/vite-dts-plugin/-/vite-dts-plugin-1.2.0.tgz#258d522b5e20176734275d933668b64814adc5b3"
-  integrity sha512-VKIhs2aBH1moUPlHlZijVqgXO4SUHYib3Xsb6dxWAtD5j3egJ5HlgSH3TkK7ruGuSk7nZkWDblmANJt5bYmj6A==
-
 vite-plugin-dts@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/vite-plugin-dts/-/vite-plugin-dts-5.0.0.tgz#b99bd7b5dc60e774cef71db8a1da3b4500176121"

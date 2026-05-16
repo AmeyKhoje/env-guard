@@ -1,7 +1,20 @@
 {
-  "name": "env-guard",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@ameykhoje/env-guard",
+  "version": "1.0.0",
+  "description": "Type-safe environment validation library",
+  "license": "MIT",
+  "author": "Amey Khoje",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "env",
+    "type-safe",
+    "type safety",
+    "env validation",
+    "env type safety",
+    "env guard"
+  ],
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -10,7 +23,8 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
     }
   },
   "scripts": {
@@ -24,7 +38,6 @@
     "@types/node": "^25.8.0",
     "typescript": "~6.0.2",
     "vite": "^8.0.13",
-    "vite-dts-plugin": "^1.2.0",
     "vite-plugin-dts": "^5.0.0",
     "vite-tsconfig-paths": "^6.1.1"
   }
