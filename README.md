@@ -1,4 +1,4 @@
-# env-guard
+# @ameykhoje/env-guard
 
 Type-safe environment variable validation for JavaScript and TypeScript.
 
@@ -19,13 +19,13 @@ Validate, transform and safely access environment variables with support for:
 ## Installation
 
 ```bash
-npm install env-guard
+npm install @ameykhoje/env-guard
 ```
 
 or
 
 ```bash
-yarn add env-guard
+yarn add @ameykhoje/env-guard
 ```
 
 ---
@@ -37,7 +37,7 @@ import {
   env,
   string,
   number,
-} from "env-guard";
+} from "@ameykhoje/env-guard";
 
 const config = env(
   {
