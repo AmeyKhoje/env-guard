@@ -1,0 +1,31 @@
+{
+  "name": "env-guard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.build.json && vite build",
+    "build:watch": "vite build -w",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.15",
+    "@types/node": "^25.8.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.13",
+    "vite-dts-plugin": "^1.2.0",
+    "vite-plugin-dts": "^5.0.0",
+    "vite-tsconfig-paths": "^6.1.1"
+  }
+}
