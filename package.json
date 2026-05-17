@@ -1,6 +1,6 @@
 {
   "name": "@ameykhoje/env-guard",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Type-safe environment validation library",
   "license": "MIT",
   "author": "Amey Khoje",
