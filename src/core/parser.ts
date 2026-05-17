@@ -58,8 +58,6 @@ export function env<T extends Record<string, CompiledSchema<any>>>(
       }
     }
 
-    output[key] = parsed;
-
     if (Array.isArray(parsed) && "_errors" in parsed) {
       const parsedErrors = parsed._errors as Array<{
         index: number;
@@ -76,7 +74,11 @@ export function env<T extends Record<string, CompiledSchema<any>>>(
             }) as EnvError,
         ),
       );
+
+      delete parsed._errors;
     }
+
+    output[key] = parsed;
   }
 
   return {
