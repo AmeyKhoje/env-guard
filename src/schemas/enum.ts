@@ -2,7 +2,7 @@ import { Builder } from "../core/builder";
 import type { CompiledSchema } from "../core/types";
 
 class EnumSchema<T extends readonly string[]> extends Builder<T[number]> {
-  constructor(private values: T) {
+  constructor(values: T) {
     super();
     this.rules.push({
       name: "enum",
