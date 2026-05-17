@@ -1,5 +1,10 @@
 import type { CompiledSchema, EnvError, EnvResult, Infer } from "./types";
 
+/**
+ * @function env
+ * @description Main configuration for env validation/guard
+ * Allows to provide configuration or set of rules for env object
+ */
 export function env<T extends Record<string, CompiledSchema<any>>>(
   schema: T,
   values = process.env,
@@ -41,7 +46,7 @@ export function env<T extends Record<string, CompiledSchema<any>>>(
     } catch (error: any) {
       errors.push({
         key,
-        message: error?.message ?? `Invalid value passed for ${key}`,
+        message: error?.message || `Invalid value passed for ${key}`,
         received: raw,
       });
       continue;

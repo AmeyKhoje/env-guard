@@ -82,6 +82,10 @@ class StringSchema extends Builder<string> {
   }
 }
 
+/**
+ * @function string
+ * @description String validation function, provides pattern to add string validation rules
+ */
 export function string() {
   return new StringSchema();
 }

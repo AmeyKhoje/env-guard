@@ -48,6 +48,10 @@ class ArraySchema<T> extends Builder<T[]> {
   }
 }
 
+/**
+ * @function array
+ * @description Array validation function, provides pattern to add array validation rules
+ */
 export function array<T>(schema: CompiledSchema<T>) {
   return new ArraySchema(schema);
 }

@@ -26,6 +26,10 @@ class EnumSchema<T extends readonly string[]> extends Builder<T[number]> {
   }
 }
 
+/**
+ * @function enum_
+ * @description Enum validation function, provides pattern to add enum validation rules
+ */
 export function enum_<T extends readonly string[]>(values: T) {
   return new EnumSchema(values);
 }

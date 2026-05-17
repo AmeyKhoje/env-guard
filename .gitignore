@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+**.tgz
+.tgz
+.npmrc
+**.npmrc
+audit.json

@@ -51,6 +51,10 @@ class NumberSchema extends Builder<number> {
   }
 }
 
+/**
+ * @function number
+ * @description Number validation function, provides pattern to add number validation rules
+ */
 export function number() {
   return new NumberSchema();
 }
