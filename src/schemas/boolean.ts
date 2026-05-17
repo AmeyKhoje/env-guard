@@ -59,6 +59,10 @@ class BooleanSchema extends Builder<boolean> {
   }
 }
 
+/**
+ * @function boolean
+ * @description Boolean validation function, provides pattern to add boolean validation rules
+ */
 export function boolean() {
   return new BooleanSchema();
 }

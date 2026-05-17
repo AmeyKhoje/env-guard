@@ -6,6 +6,7 @@ Validate, transform and safely access environment variables with support for:
 
 * String validation
 * Number validation
+* Enum validation
 * Boolean parsing
 * Arrays
 * Optional values
@@ -115,21 +116,13 @@ Throws when validation fails.
 
 ```ts
 string()
-
   .minLength(4)
-
   .regex(/abc/)
-
   .email()
-
   .url()
-
   .uuid()
-
   .optional()
-
   .default("value")
-
   .compile()
 ```
 
@@ -149,19 +142,14 @@ string()
 
 ```ts
 number()
-
   .min(1)
-
   .max(100)
-
   .optional()
-
   .default(10)
-
   .compile()
 ```
 
-Example:
+Example
 
 ```ts
 PORT:
@@ -178,11 +166,8 @@ number()
 
 ```ts
 boolean()
-
   .default(false)
-
   .optional()
-
   .compile()
 ```
 
