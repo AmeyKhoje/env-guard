@@ -384,6 +384,18 @@ const config =
   );
 ```
 
+## Upcoming Features
+
+* Number Validation - Posivite, Negative, Finite
+* Array - Unique Elements, Non Empty, Length
+* Date(new)
+* Transformation (new)
+* Built-in dotenv loading
+* Multiple env support
+* Prefix validation. Eg. VITE_, NEXT_PUBLIC_
+* Asynchronous validations
+* Generate .env.example
+
 ---
 
 ## License
