@@ -31,7 +31,10 @@
     "dev": "vite",
     "build": "tsc -p tsconfig.build.json && vite build",
     "build:watch": "vite build -w",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "audit": "yarn audit"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.15",
